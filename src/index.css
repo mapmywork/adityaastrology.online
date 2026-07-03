@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+/* ===== Custom Theme (Tailwind v4 CSS-first config) ===== */
+@theme {
+  /* Colors - Luxury Spiritual Palette */
+  --color-ivory: #FFFDF8;
+  --color-pearl: #FAF7F2;
+  --color-cream: #F5F0E8;
+  --color-sand: #EDE5D8;
+  --color-warm-beige: #D4C5A9;
+  --color-saffron: #F4A940;
+  --color-saffron-light: #FFF3E0;
+  --color-gold: #C5A55A;
+  --color-gold-light: #D4B96A;
+  --color-gold-dark: #A8893A;
+  --color-rose-gold: #B76E79;
+  --color-rose-gold-light: #D4949D;
+  --color-copper: #C08050;
+  --color-brown-dark: #3B2314;
+  --color-brown: #5C3D2E;
+  --color-charcoal: #3A3A3A;
+  --color-text-primary: #2D1B0E;
+  --color-text-secondary: #6B5744;
+  --color-text-muted: #9B8B78;
+  --color-white-warm: #FFFEFA;
+  --color-overlay-gold: rgba(197, 165, 90, 0.08);
+  --color-overlay-rose: rgba(183, 110, 121, 0.06);
+  --color-glass: rgba(255, 253, 248, 0.7);
+  --color-glass-border: rgba(197, 165, 90, 0.2);
+  --color-celestial-purple: #8B6AAE;
+  --color-celestial-pink: #D4949D;
+
+  /* Fonts */
+  --font-heading: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-accent: "Cormorant Garamond", Georgia, serif;
+
+  /* Shadows */
+  --shadow-gold: 0 4px 30px rgba(197, 165, 90, 0.15);
+  --shadow-gold-lg: 0 8px 50px rgba(197, 165, 90, 0.2);
+  --shadow-gold-xl: 0 20px 80px rgba(197, 165, 90, 0.25);
+  --shadow-soft: 0 4px 20px rgba(59, 35, 20, 0.06);
+  --shadow-card: 0 8px 40px rgba(59, 35, 20, 0.08);
+  --shadow-elevated: 0 20px 60px rgba(59, 35, 20, 0.12);
+
+  /* Animations */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 8s ease-in-out infinite;
+  --animate-float-reverse: float-reverse 7s ease-in-out infinite;
+  --animate-glow: glow 3s ease-in-out infinite;
+  --animate-pulse-gold: pulse-gold 2s ease-in-out infinite;
+  --animate-spin-slow: spin 20s linear infinite;
+  --animate-shimmer: shimmer 3s ease-in-out infinite;
+  --animate-fade-in: fadeIn 0.6s ease-out forwards;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  @keyframes float-reverse {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(20px); }
+  }
+  @keyframes glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(197, 165, 90, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(197, 165, 90, 0.6); }
+  }
+  @keyframes pulse-gold {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+  }
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+@layer base {
+  /* ===== Base Styles ===== */
+  * {
+    /* Let Tailwind preflight handle margin and padding, avoid overriding utilities! */
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-ivory);
+    color: var(--color-text-primary);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  /* ===== Custom Scrollbar ===== */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-cream);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-gold);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gold-dark);
+  }
+  
+  /* ===== Glassmorphism Utility ===== */
+  .glass-card {
+    background: rgba(255, 253, 248, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(197, 165, 90, 0.15);
+    border-radius: 1.5rem;
+  }
+  
+  .glass-card-strong {
+    background: rgba(255, 253, 248, 0.85);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(197, 165, 90, 0.25);
+    border-radius: 1.5rem;
+  }
+  
+  /* ===== Golden Gradient Text ===== */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, var(--color-gold), var(--color-saffron), var(--color-gold-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* ===== Ornamental Divider ===== */
+  .ornament-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .ornament-divider::before,
+  .ornament-divider::after {
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+  }
+  
+  /* ===== Selection ===== */
+  ::selection {
+    background: rgba(197, 165, 90, 0.3);
+    color: var(--color-brown-dark);
+  }
+  
+  /* ===== Swiper Overrides ===== */
+  .swiper-pagination-bullet {
+    background: var(--color-gold) !important;
+    opacity: 0.4 !important;
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background: var(--color-gold) !important;
+  }
+}
