@@ -51,7 +51,7 @@ export default function Navbar() {
             <a href="#home" className="flex items-center gap-3 group">
               <div className="flex flex-col">
                 <span className="text-xl font-heading font-bold text-text-primary leading-tight tracking-wide">
-                  Aditya <span className="text-gradient-gold">Vastrulogy</span>
+                  Aditya <span className="text-gradient-gold">Astrology</span>
                 </span>
                 <span className="text-[10px] tracking-[0.25em] uppercase text-text-muted font-body">
                   Vedic Astrology Centre
@@ -164,7 +164,7 @@ export default function Navbar() {
 
                 {/* Decorative */}
                 <div className="mt-12 text-center">
-                  <p className="text-sm text-text-muted font-body">✦ Aditya Vastrulogy ✦</p>
+                  <p className="text-sm text-text-muted font-body">✦ Aditya Astrology ✦</p>
                   <p className="text-xs text-text-muted/70 mt-1 font-body">Vedic Astrology & Spiritual Guidance</p>
                 </div>
               </div>

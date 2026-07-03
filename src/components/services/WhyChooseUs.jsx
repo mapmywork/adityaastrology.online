@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
         <SectionHeader
           badge="Why Us"
           title="Why Choose"
-          highlight="Aditya Vastrulogy"
+          highlight="Aditya Astrology"
           subtitle="Experience the perfect blend of ancient wisdom and modern expertise for your spiritual journey."
         />
 

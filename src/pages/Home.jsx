@@ -14,12 +14,12 @@ export default function Home() {
     <main className="flex-grow">
       <HeroSection />
       <AboutGuru />
+      <CourseSection />
       <ServicesSection />
       {/* <ZodiacSection /> */}
       <WhyChooseUs />
       {/* <PoojaSection /> */}
       <TestimonialSection />
-      <CourseSection />
       {/* <BlogSection /> */}
       <ConsultationForm />
     </main>

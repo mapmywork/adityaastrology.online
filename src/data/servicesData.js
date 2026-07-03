@@ -15,7 +15,7 @@ export const servicesData = [
       'Personal chart-backed recommendations',
       'Practical timing and remedy guidance'
     ],
-    price: '₹1,499'
+    price: '₹1,500'
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ export const servicesData = [
       'Personal chart-backed recommendations',
       'Practical timing and remedy guidance'
     ],
-    price: '₹1,499'
+    price: '₹1,500'
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ export const servicesData = [
       'Personal chart-backed recommendations',
       'Practical timing and remedy guidance'
     ],
-    price: '₹1,499'
+    price: '₹1,500'
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ export const servicesData = [
       'Personal chart-backed recommendations',
       'Practical timing and remedy guidance'
     ],
-    price: '₹1,499'
+    price: '₹1,500'
   },
   {
     id: 5,
@@ -67,6 +67,6 @@ export const servicesData = [
       'Personal chart-backed recommendations',
       'Practical timing and remedy guidance'
     ],
-    price: '₹1,499'
+    price: '₹1,500'
   }
 ];

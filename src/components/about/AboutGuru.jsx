@@ -1,23 +1,6 @@
 import { motion } from 'framer-motion';
-import { fadeLeft, fadeRight, fadeUp } from '../../utils/animations';
-import { useCounter } from '../../hooks/useCounter';
-import { Award, BookOpen, Users, Globe } from 'lucide-react';
+import { fadeLeft, fadeRight } from '../../utils/animations';
 import guruImage from '../../guru.jpeg';
-
-function StatCounter({ end, suffix = '', label, icon: Icon }) {
-  const { count, ref } = useCounter(end, 2500);
-  return (
-    <div ref={ref} className="text-center">
-      <div className="w-12 h-12 mx-auto mb-3 rounded-2xl bg-gradient-to-br from-gold/10 to-saffron/10 border border-gold/15 flex items-center justify-center">
-        <Icon className="w-5 h-5 text-gold-dark" />
-      </div>
-      <p className="text-3xl lg:text-4xl font-heading font-bold text-gradient-gold">
-        {count}{suffix}
-      </p>
-      <p className="text-sm text-text-muted font-body mt-1 tracking-wide">{label}</p>
-    </div>
-  );
-}
 
 export default function AboutGuru() {
   return (
@@ -57,7 +40,7 @@ export default function AboutGuru() {
                 animate={{ y: [0, -5, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
               >
-                <p className="text-3xl font-heading font-bold text-gradient-gold">25+</p>
+                <p className="text-3xl font-heading font-bold text-gradient-gold">5+</p>
                 <p className="text-xs text-text-muted font-body tracking-wider uppercase">Years of<br />Experience</p>
               </motion.div>
 
@@ -85,7 +68,7 @@ export default function AboutGuru() {
             </div>
 
             <p className="text-lg text-text-secondary leading-relaxed mb-6 font-body">
-              With over 25 years of devoted study and practice in Vedic astrology, Pro. Sunil Pated (Sunil Sir)
+              With over 5 years of devoted study and practice in Vedic astrology, Pro. Sunil Pated (Sunil Sir)
               has illuminated the lives of thousands seeking divine guidance. Rooted in the ancient traditions of
               Jyotish Shastra, his wisdom bridges celestial knowledge with practical life solutions.
             </p>
@@ -130,19 +113,6 @@ export default function AboutGuru() {
           </motion.div>
         </div>
 
-        {/* Stats */}
-        <motion.div
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-24 pt-16 border-t border-gold/10"
-        >
-          <StatCounter end={25} suffix="+" label="Years Experience" icon={Award} />
-          <StatCounter end={50000} suffix="+" label="Consultations" icon={Users} />
-          <StatCounter end={322} suffix="+" label="Poojas Conducted" icon={BookOpen} />
-          <StatCounter end={18} suffix="+" label="Countries Served" icon={Globe} />
-        </motion.div>
       </div>
     </section>
   );

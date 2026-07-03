@@ -6,10 +6,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: FaFacebookF, href: '#' },
-    { icon: FaInstagram, href: '#' },
-    { icon: FaYoutube, href: '#' },
-    { icon: FaTwitter, href: '#' }
+    // { icon: FaFacebookF, href: '#' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/aditya_astrology_07?igsh=bmtwOHd5NDhsOWQ0' },
+    { icon: FaYoutube, href: 'https://youtube.com/@adityaastrology07?si=ANHC6bXYuMf-JVw7' },
+    // { icon: FaTwitter, href: '#' }
   ];
 
   const quickLinks = [
@@ -50,7 +50,7 @@ export default function Footer() {
             <a href="#home" className="flex items-center gap-3">
               <div className="flex flex-col">
                 <span className="text-xl font-heading font-bold text-text-primary leading-tight tracking-wide">
-                  Aditya <span className="text-gradient-gold">Vastrulogy</span>
+                  Aditya <span className="text-gradient-gold">Astrology</span>
                 </span>
                 <span className="text-[10px] tracking-[0.25em] uppercase text-text-muted font-body">
                   Vedic Astrology
@@ -137,8 +137,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gold shrink-0" />
-                <a href="mailto:info@adityavastrulogy.com" className="hover:text-gold-dark transition-colors">
-                  info@adityavastrulogy.com
+                <a href="mailto:info@adityaastrology.com" className="hover:text-gold-dark transition-colors">
+                  info@adityaastrology.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -150,17 +150,7 @@ export default function Footer() {
 
         </div>
 
-        {/* Map / Bottom CTA */}
-        <div className="w-full h-48 lg:h-64 rounded-2xl overflow-hidden border-2 border-white shadow-soft mb-12 relative group">
-           {/* Placeholder for Google Map Embed */}
-           <div className="absolute inset-0 bg-cream flex flex-col items-center justify-center text-center p-4">
-              <MapPin className="w-8 h-8 text-gold/50 mb-2" />
-              <p className="text-sm font-heading text-text-secondary">Location Map Placeholder</p>
-              <p className="text-xs text-text-muted mt-1">(Embed Google Maps iframe here)</p>
-           </div>
-           
-           <div className="absolute inset-0 bg-gold/0 group-hover:bg-gold/5 transition-colors pointer-events-none" />
-        </div>
+
 
       </div>
 
@@ -169,7 +159,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
             <p className="text-xs text-text-muted font-body">
-              &copy; {currentYear} Aditya Vastrulogy. All Rights Reserved.
+              &copy; {currentYear} Aditya Astrology. All Rights Reserved.
             </p>
             <p className="text-xs text-text-muted font-body">
               Designed with devotion and care.

@@ -82,8 +82,10 @@ export default function HeroSection() {
                 <Calendar className="w-5 h-5" />
                 Book Consultation
               </a>
-              <a
-                href="#services"
+              <a 
+                href="https://www.lifechangingastro.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex items-center gap-3 px-8 py-4 text-base font-medium text-text-primary bg-white hover:bg-gold/5 rounded-full shadow-soft hover:shadow-card border border-gold/20 transition-all duration-300 font-body"
               >
                 <ShoppingBag className="w-5 h-5 text-gold group-hover:text-gold-dark transition-colors" />
@@ -115,10 +117,12 @@ export default function HeroSection() {
             {/* Glow behind image */}
             <div className="absolute inset-0 bg-gold/5 rounded-full blur-2xl" />
 
-            <img 
+            <motion.img 
               src={zodiacWheel} 
               alt="Vedic Astrology Wheel" 
               className="w-full h-full object-contain rounded-full relative z-10 mix-blend-multiply shadow-gold-2xl"
+              animate={{ rotate: 360 }}
+              transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
             />
           </motion.div>
 

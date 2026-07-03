@@ -14,8 +14,8 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           badge="Our Expertise"
-          title="Sacred Services for"
-          highlight="Your Journey"
+          title="Our Professional"
+          highlight="Astrology Services"
           subtitle="Discover our comprehensive range of Vedic astrology and spiritual services, each crafted with ancient wisdom and delivered with modern precision."
         />
 
