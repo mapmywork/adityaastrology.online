@@ -40,7 +40,7 @@ export default function PoojaSection() {
               key={pooja.id}
               variants={fadeUp}
               whileHover={{ y: -8 }}
-              className="group relative rounded-3xl overflow-hidden bg-white border border-gold/10 hover:border-gold/25 shadow-soft hover:shadow-gold-lg transition-all duration-500 cursor-pointer"
+              className="group relative rounded-3xl overflow-hidden bg-pearl border border-gold/10 hover:border-gold/25 shadow-soft hover:shadow-gold-lg transition-all duration-500 cursor-pointer"
             >
               {/* Image */}
               <div className="relative h-52 overflow-hidden">

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { fadeLeft, fadeRight } from '../../utils/animations';
 import guruImage from '../../guru.jpeg';
+import guru2Image from '../../guru2.jpeg';
 
 export default function AboutGuru() {
   return (
@@ -19,32 +20,46 @@ export default function AboutGuru() {
             viewport={{ once: true, amount: 0.3 }}
             className="relative"
           >
-            <div className="relative max-w-sm mx-auto lg:mx-0">
-              {/* Golden frame */}
-              <div className="absolute -inset-4 rounded-full border border-gold/20" />
-              <div className="absolute -inset-8 rounded-full border border-gold/10" />
+            <div className="flex flex-col gap-12">
+              <div className="relative max-w-sm mx-auto lg:mx-0">
+                {/* Golden frame */}
+                <div className="absolute -inset-4 rounded-full border border-gold/20" />
+                <div className="absolute -inset-8 rounded-full border border-gold/10" />
 
-              {/* Image */}
-              <div className="relative rounded-full overflow-hidden shadow-gold-xl aspect-square">
-                <img
-                  src={guruImage}
-                  alt="Pro. Sunil Pated (Sunil Sir)"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/30 via-transparent to-gold/5 rounded-full" />
+                {/* Main Image */}
+                <div className="relative rounded-full overflow-hidden shadow-gold-xl aspect-square z-10">
+                  <img
+                    src={guruImage}
+                    alt="Pro. Sunil Pated (Sunil Sir)"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brown-dark/30 via-transparent to-gold/5 rounded-full" />
+                </div>
+
+                {/* Experience badge */}
+                <motion.div
+                  className="absolute -bottom-6 -right-6 p-5 glass-card-strong shadow-gold-lg z-20"
+                  animate={{ y: [0, -5, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                >
+                  <p className="text-3xl font-heading font-bold text-gradient-gold">5+</p>
+                  <p className="text-xs text-text-muted font-body tracking-wider uppercase">Years of<br />Experience</p>
+                </motion.div>
               </div>
 
-              {/* Experience badge */}
-              <motion.div
-                className="absolute -bottom-6 -right-6 p-5 glass-card-strong shadow-gold-lg"
-                animate={{ y: [0, -5, 0] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-              >
-                <p className="text-3xl font-heading font-bold text-gradient-gold">5+</p>
-                <p className="text-xs text-text-muted font-body tracking-wider uppercase">Years of<br />Experience</p>
-              </motion.div>
-
+              {/* Second Placeholder Image */}
+              <div className="relative max-w-sm mx-auto lg:mx-0 mt-8">
+                <div className="relative rounded-full overflow-hidden shadow-gold-xl aspect-square border-4 border-ivory z-10">
+                  <img
+                    src={guru2Image}
+                    alt="Second Guru"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              </div>
             </div>
+
+
           </motion.div>
 
           {/* Right - Content */}
@@ -60,7 +75,7 @@ export default function AboutGuru() {
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-text-primary mb-4 leading-tight">
               Pro.{' '}
-              <span className="text-gradient-gold">Sunil Pated (Sunil Sir)</span>
+              <span className="text-gradient-gold whitespace-nowrap">Sunil Pated (Sunil Sir)</span>
             </h2>
 
             <div className="ornament-divider my-6 justify-start">
@@ -73,15 +88,12 @@ export default function AboutGuru() {
               Jyotish Shastra, his wisdom bridges celestial knowledge with practical life solutions.
             </p>
 
-            <p className="text-base text-text-secondary/80 leading-relaxed mb-8 font-body">
-              His mission is to bring the sacred science of Vedic astrology to every seeker, offering personalized
-              guidance that honors traditional knowledge while embracing the needs of modern life. From Kundali
-              analysis to spiritual healing, every consultation is conducted with reverence and authenticity.
-            </p>
+
 
             {/* Achievements */}
             <div className="space-y-4 mb-10">
               {[
+                'Education Background: VAIDIK, BNN, KP, NAVTARA SPECIAL, GEMINI',
                 'Gold Medalist in Jyotish Shastra from Kashi Vidyapeeth',
                 'Featured on national television for astrological expertise',
                 'Author of 3 bestselling books on Vedic astrology',

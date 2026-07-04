@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
                 key={index}
                 variants={fadeUp}
                 whileHover={{ y: -6 }}
-                className="group relative p-8 rounded-3xl bg-white border border-gold/10 hover:border-gold/25 hover:shadow-gold-lg transition-all duration-500 cursor-pointer"
+                className="group relative p-8 rounded-3xl bg-pearl border border-gold/10 hover:border-gold/25 hover:shadow-gold-lg transition-all duration-500 cursor-pointer"
               >
                 {/* Subtle gradient bg on hover */}
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-saffron/5 to-rose-gold/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

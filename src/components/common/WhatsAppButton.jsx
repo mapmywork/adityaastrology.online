@@ -25,7 +25,7 @@ export default function WhatsAppButton() {
       <FaWhatsapp className="text-3xl" />
       
       {/* Tooltip */}
-      <span className="absolute right-20 whitespace-nowrap px-4 py-2 rounded-xl bg-white text-text-primary text-sm font-medium shadow-card opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-gold/10">
+      <span className="absolute right-20 whitespace-nowrap px-4 py-2 rounded-xl bg-pearl text-text-primary text-sm font-medium shadow-card opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none border border-gold/10">
         Chat with us ✨
       </span>
     </motion.a>

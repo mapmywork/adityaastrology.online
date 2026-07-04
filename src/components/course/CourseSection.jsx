@@ -87,7 +87,7 @@ export default function CourseSection() {
                 <div className={`absolute inset-0 bg-gradient-to-br ${subject.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
                 
                 <div className="relative z-10">
-                  <div className="w-16 h-16 rounded-2xl bg-white border border-gold/20 flex items-center justify-center mb-6 group-hover:bg-gradient-to-br group-hover:from-gold group-hover:to-saffron shadow-sm transition-all duration-500">
+                  <div className="w-16 h-16 rounded-2xl bg-pearl border border-gold/20 flex items-center justify-center mb-6 group-hover:bg-gradient-to-br group-hover:from-gold group-hover:to-saffron shadow-sm transition-all duration-500">
                     <Icon className="w-8 h-8 text-gold-dark group-hover:text-white transition-colors" />
                   </div>
                   
@@ -115,7 +115,7 @@ export default function CourseSection() {
             rel="noopener noreferrer"
             className="group flex items-center gap-3 px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-gold via-saffron to-gold rounded-full shadow-gold-lg hover:shadow-gold-xl transition-all duration-300 font-body"
           >
-            Click to Consultation
+            Click the Course
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>

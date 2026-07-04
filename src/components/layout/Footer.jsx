@@ -70,7 +70,7 @@ export default function Footer() {
                     key={index}
                     href={social.href}
                     whileHover={{ y: -3, scale: 1.1 }}
-                    className="w-9 h-9 rounded-full bg-white border border-gold/20 flex items-center justify-center text-gold-dark hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300 shadow-sm"
+                    className="w-9 h-9 rounded-full bg-pearl border border-gold/20 flex items-center justify-center text-gold-dark hover:bg-gold hover:text-white hover:border-gold transition-colors duration-300 shadow-sm"
                   >
                     <IconComponent className="text-sm" />
                   </motion.a>
@@ -121,7 +121,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-text-secondary font-body">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
-                <span>Jath Highschool Road,<br />Near Balvidhya Mandir,<br />Daneshwari colany jath,<br />Aditya Astrology office 416404</span>
+                <span>Jath Highschool Road,<br />Near Balvidhya Mandir,<br />Dhaneswari colany jath,<br />Aditya Astrology office 416404</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gold shrink-0" />

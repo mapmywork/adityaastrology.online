@@ -84,7 +84,7 @@ export default function ConsultationForm() {
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-4 h-4 text-gold" />
-                  <span>Jath Highschool Road,<br/>Near Balvidhya Mandir,<br/>Daneshwari colany jath,<br/>Aditya Astrology office 416404</span>
+                  <span>Jath Highschool Road,<br/>Near Balvidhya Mandir,<br/>Dhaneswari colany jath,<br/>Aditya Astrology office 416404</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-4 h-4 text-gold" />

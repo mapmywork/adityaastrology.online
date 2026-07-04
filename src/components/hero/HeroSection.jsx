@@ -86,10 +86,10 @@ export default function HeroSection() {
                 href="https://www.lifechangingastro.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-3 px-8 py-4 text-base font-medium text-text-primary bg-white hover:bg-gold/5 rounded-full shadow-soft hover:shadow-card border border-gold/20 transition-all duration-300 font-body"
+                className="group flex items-center gap-3 px-8 py-4 text-base font-medium text-text-primary bg-pearl hover:bg-gold/5 rounded-full shadow-soft hover:shadow-card border border-gold/20 transition-all duration-300 font-body"
               >
                 <ShoppingBag className="w-5 h-5 text-gold group-hover:text-gold-dark transition-colors" />
-                Shop Products
+                Shop Products | Life Changing Astro
                 <span className="text-xl leading-none group-hover:translate-x-1 transition-transform ml-1">→</span>
               </a>
             </motion.div>

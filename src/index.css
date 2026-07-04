@@ -2,31 +2,31 @@
 
 /* ===== Custom Theme (Tailwind v4 CSS-first config) ===== */
 @theme {
-  /* Colors - Luxury Spiritual Palette */
-  --color-ivory: #FFFDF8;
-  --color-pearl: #FAF7F2;
-  --color-cream: #F5F0E8;
-  --color-sand: #EDE5D8;
-  --color-warm-beige: #D4C5A9;
+  /* Colors - Luxury Spiritual Palette (Dark Theme) */
+  --color-ivory: #0A0F1D;
+  --color-pearl: #111827;
+  --color-cream: #1F2937;
+  --color-sand: #334155;
+  --color-warm-beige: #475569;
   --color-saffron: #F4A940;
-  --color-saffron-light: #FFF3E0;
+  --color-saffron-light: #4A3515;
   --color-gold: #C5A55A;
   --color-gold-light: #D4B96A;
   --color-gold-dark: #A8893A;
   --color-rose-gold: #B76E79;
   --color-rose-gold-light: #D4949D;
   --color-copper: #C08050;
-  --color-brown-dark: #3B2314;
-  --color-brown: #5C3D2E;
-  --color-charcoal: #3A3A3A;
-  --color-text-primary: #2D1B0E;
-  --color-text-secondary: #6B5744;
-  --color-text-muted: #9B8B78;
-  --color-white-warm: #FFFEFA;
-  --color-overlay-gold: rgba(197, 165, 90, 0.08);
-  --color-overlay-rose: rgba(183, 110, 121, 0.06);
-  --color-glass: rgba(255, 253, 248, 0.7);
-  --color-glass-border: rgba(197, 165, 90, 0.2);
+  --color-brown-dark: #05080F;
+  --color-brown: #0A0F1D;
+  --color-charcoal: #E2E8F0;
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #94A3B8;
+  --color-text-muted: #64748B;
+  --color-white-warm: #0F172A;
+  --color-overlay-gold: rgba(197, 165, 90, 0.15);
+  --color-overlay-rose: rgba(183, 110, 121, 0.15);
+  --color-glass: rgba(15, 23, 42, 0.7);
+  --color-glass-border: rgba(197, 165, 90, 0.3);
   --color-celestial-purple: #8B6AAE;
   --color-celestial-pink: #D4949D;
 
@@ -125,7 +125,7 @@
   
   /* ===== Glassmorphism Utility ===== */
   .glass-card {
-    background: rgba(255, 253, 248, 0.65);
+    background: rgba(15, 23, 42, 0.65);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(197, 165, 90, 0.15);
@@ -133,7 +133,7 @@
   }
   
   .glass-card-strong {
-    background: rgba(255, 253, 248, 0.85);
+    background: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     border: 1px solid rgba(197, 165, 90, 0.25);

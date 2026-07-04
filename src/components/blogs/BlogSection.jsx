@@ -30,7 +30,7 @@ export default function BlogSection() {
               key={post.id}
               variants={fadeUp}
               whileHover={{ y: -6 }}
-              className="group relative rounded-3xl overflow-hidden bg-white border border-gold/10 hover:border-gold/20 shadow-soft hover:shadow-gold-lg transition-all duration-500 cursor-pointer"
+              className="group relative rounded-3xl overflow-hidden bg-pearl border border-gold/10 hover:border-gold/20 shadow-soft hover:shadow-gold-lg transition-all duration-500 cursor-pointer"
             >
               {/* Image */}
               <div className="relative h-56 overflow-hidden">

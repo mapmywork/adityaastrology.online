@@ -47,7 +47,7 @@ export default function ServicesSection() {
                     <span className="px-3 py-1.5 text-[10px] sm:text-xs font-semibold tracking-widest uppercase rounded-full bg-gradient-to-r from-gold/10 to-saffron/10 text-gold-dark border border-gold/20 font-body">
                       {service.badge}
                     </span>
-                    <div className="w-10 h-10 rounded-full bg-white border border-gold/20 flex items-center justify-center group-hover:bg-gradient-to-r group-hover:from-gold group-hover:to-saffron transition-all duration-300 shadow-sm shrink-0 ml-4">
+                    <div className="w-10 h-10 rounded-full bg-pearl border border-gold/20 flex items-center justify-center group-hover:bg-gradient-to-r group-hover:from-gold group-hover:to-saffron transition-all duration-300 shadow-sm shrink-0 ml-4">
                       <IconComponent className="w-4 h-4 text-gold-dark group-hover:text-white transition-colors" />
                     </div>
                   </div>
