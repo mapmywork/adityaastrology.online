@@ -4,6 +4,7 @@ import AboutGuru from '../components/about/AboutGuru';
 import ZodiacSection from '../components/astrology/ZodiacSection';
 import WhyChooseUs from '../components/services/WhyChooseUs';
 import PoojaSection from '../components/poojas/PoojaSection';
+import VideoSection from '../components/video/VideoSection';
 import TestimonialSection from '../components/testimonials/TestimonialSection';
 import BlogSection from '../components/blogs/BlogSection';
 import CourseSection from '../components/course/CourseSection';
@@ -19,6 +20,7 @@ export default function Home() {
       {/* <ZodiacSection /> */}
       <WhyChooseUs />
       {/* <PoojaSection /> */}
+      <VideoSection />
       <TestimonialSection />
       {/* <BlogSection /> */}
       <ConsultationForm />

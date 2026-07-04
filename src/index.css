@@ -3,11 +3,11 @@
 /* ===== Custom Theme (Tailwind v4 CSS-first config) ===== */
 @theme {
   /* Colors - Luxury Spiritual Palette (Dark Theme) */
-  --color-ivory: #0A0F1D;
-  --color-pearl: #111827;
-  --color-cream: #1F2937;
-  --color-sand: #334155;
-  --color-warm-beige: #475569;
+  --color-ivory: #151E32;
+  --color-pearl: #1C263B;
+  --color-cream: #28354D;
+  --color-sand: #3B4A66;
+  --color-warm-beige: #4F6182;
   --color-saffron: #F4A940;
   --color-saffron-light: #4A3515;
   --color-gold: #C5A55A;
@@ -16,8 +16,8 @@
   --color-rose-gold: #B76E79;
   --color-rose-gold-light: #D4949D;
   --color-copper: #C08050;
-  --color-brown-dark: #05080F;
-  --color-brown: #0A0F1D;
+  --color-brown-dark: #0B111F;
+  --color-brown: #151E32;
   --color-charcoal: #E2E8F0;
   --color-text-primary: #F8FAFC;
   --color-text-secondary: #94A3B8;
