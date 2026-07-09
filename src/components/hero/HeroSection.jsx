@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { fadeLeft, fadeRight } from '../../utils/animations';
 import { Calendar, ShoppingBag, Sparkles } from 'lucide-react';
 import FloatingElements from './FloatingElements';
-import zodiacWheel from '../../zodiac_wheel.png';
+import zodiacWheel from '../../1.jpeg';
 
 export default function HeroSection() {
   return (
@@ -120,7 +120,7 @@ export default function HeroSection() {
             <motion.img 
               src={zodiacWheel} 
               alt="Vedic Astrology Wheel" 
-              className="w-full h-full object-contain rounded-full relative z-10 mix-blend-multiply shadow-gold-2xl"
+              className="w-full h-full object-contain rounded-full relative z-10 shadow-gold-2xl"
               animate={{ rotate: 360 }}
               transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
             />

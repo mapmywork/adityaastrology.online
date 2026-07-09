@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, Sparkles } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
+import logoImg from '../../2.jpeg';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -49,6 +50,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-3 group">
+              <img src={logoImg} alt="Aditya Astrology Logo" className="w-12 h-12 rounded-full object-cover shadow-soft border border-gold/20" />
               <div className="flex flex-col">
                 <span className="text-xl font-heading font-bold text-text-primary leading-tight tracking-wide">
                   Aditya <span className="text-gradient-gold">Astrology</span>

@@ -1,6 +1,7 @@
 import { MapPin, Phone, Mail, Clock, Sparkles } from 'lucide-react';
 import { FaWhatsapp, FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import logoImg from '../../2.jpeg';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -48,6 +49,7 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-6">
             <a href="#home" className="flex items-center gap-3">
+              <img src={logoImg} alt="Aditya Astrology Logo" className="w-14 h-14 rounded-full object-cover shadow-soft border border-gold/20" />
               <div className="flex flex-col">
                 <span className="text-xl font-heading font-bold text-text-primary leading-tight tracking-wide">
                   Aditya <span className="text-gradient-gold">Astrology</span>

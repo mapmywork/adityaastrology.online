@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { staggerContainer, fadeUp } from '../../utils/animations';
 import { servicesData } from '../../data/servicesData';
 import SectionHeader from '../common/SectionHeader';
+import placeholderImage from '../../3.jpeg';
 
 export default function ServicesSection() {
   return (
@@ -89,6 +90,20 @@ export default function ServicesSection() {
               </motion.div>
             );
           })}
+          
+          {/* Image Placeholder */}
+          <motion.div
+            variants={fadeUp}
+            whileHover={{ y: -8, transition: { duration: 0.3 } }}
+            className="group relative glass-card flex flex-col justify-center items-center transition-shadow duration-500 hover:shadow-gold-lg h-full min-h-[320px] overflow-hidden p-0"
+          >
+            <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 border border-gold/30 z-20 pointer-events-none" />
+            <img 
+              src={placeholderImage} 
+              alt="Astrology Service" 
+              className="w-full h-full object-cover rounded-3xl"
+            />
+          </motion.div>
         </motion.div>
       </div>
     </section>
