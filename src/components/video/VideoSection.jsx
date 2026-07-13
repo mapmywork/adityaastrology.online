@@ -28,7 +28,7 @@ const VideoSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {/* Video 1 */}
           <div className="glass-card overflow-hidden rounded-2xl border border-glass-border shadow-soft group transition-transform duration-500 hover:-translate-y-2">
-            <div className="relative aspect-[4/5] bg-cream flex-grow h-full">
+            <div className="relative aspect-[3/2] bg-cream flex-grow h-full">
               <video 
                 className="absolute inset-0 w-full h-full object-cover rounded-2xl"
                 controls
@@ -43,7 +43,7 @@ const VideoSection = () => {
 
           {/* Video 2 */}
           <div className="glass-card overflow-hidden rounded-2xl border border-glass-border shadow-soft group transition-transform duration-500 hover:-translate-y-2">
-            <div className="relative aspect-[4/5] bg-cream flex-grow h-full">
+            <div className="relative aspect-[3/2] bg-cream flex-grow h-full">
               <video 
                 className="absolute inset-0 w-full h-full object-cover rounded-2xl"
                 controls

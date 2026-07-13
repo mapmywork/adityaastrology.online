@@ -120,7 +120,7 @@ export default function HeroSection() {
             <motion.img 
               src={zodiacWheel} 
               alt="Vedic Astrology Wheel" 
-              className="w-full h-full object-contain rounded-full relative z-10 shadow-gold-2xl"
+              className="w-full h-full object-cover rounded-full relative z-10 shadow-gold-2xl"
               animate={{ rotate: 360 }}
               transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
             />
