@@ -77,20 +77,20 @@ export default function HeroSection() {
             >
               <a
                 href="#contact"
-                className="group flex items-center gap-3 px-8 py-4 text-base font-medium text-white bg-gradient-to-r from-gold via-saffron to-gold rounded-full shadow-gold-lg hover:shadow-gold-xl transition-all duration-300 font-body"
+                className="group flex items-center gap-3 px-10 py-5 text-lg font-medium text-white bg-gradient-to-r from-gold via-saffron to-gold rounded-full shadow-gold-lg hover:shadow-gold-xl transition-all duration-300 font-body"
               >
-                <Calendar className="w-5 h-5" />
+                <Calendar className="w-6 h-6" />
                 Book Consultation
               </a>
               <a 
-                href="https://www.lifechangingastro.com/"
+                href="https://lifechangingastro.com/?utm_source=Sunil+Pated&utm_medium=ASTROLOGER&utm_campaign=ASTRO"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-3 px-8 py-4 text-base font-medium text-text-primary bg-pearl hover:bg-gold/5 rounded-full shadow-soft hover:shadow-card border border-gold/20 transition-all duration-300 font-body"
+                className="group flex items-center gap-3 px-10 py-5 text-lg font-medium text-text-primary bg-pearl hover:bg-gold/5 rounded-full shadow-soft hover:shadow-card border border-gold/20 transition-all duration-300 font-body"
               >
-                <ShoppingBag className="w-5 h-5 text-gold group-hover:text-gold-dark transition-colors" />
+                <ShoppingBag className="w-6 h-6 text-gold group-hover:text-gold-dark transition-colors" />
                 Shop Products | Life Changing Astro
-                <span className="text-xl leading-none group-hover:translate-x-1 transition-transform ml-1">→</span>
+                <span className="text-2xl leading-none group-hover:translate-x-1 transition-transform ml-1">→</span>
               </a>
             </motion.div>
           </motion.div>
